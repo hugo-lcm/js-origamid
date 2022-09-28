@@ -30,7 +30,7 @@ console.log(i); //i é acessível mesmo estando fora do for
 //bugs no código.
 const day = 'monday'
 day = 'friday' // erro, pq tentou modificar o valor
-const week // erro, pq declarou sem valor
+//const week // erro, pq declarou sem valor
 
 const data = {
     day: 28,

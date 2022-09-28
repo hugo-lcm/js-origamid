@@ -4,7 +4,7 @@
     const brand = 'Fiat'
     let doors = 4
 }
-console.log(var, brand, doors) //var é palavra reservada e brand e doors nao sao acessíveis fora do bloco
+//console.log(var, brand, doors) //var é palavra reservada e brand e doors nao sao acessíveis fora do bloco
 
 // Como corrigir o erro abaixo?
 function sumTwo(x) {
