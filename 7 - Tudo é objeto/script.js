@@ -1,79 +1,44 @@
-var person = {
-    name: 'john',
-    age: 31,
-    profession: 'developer',
-    haveDegree: true
+var person = 'André'
+
+person.length // 5
+person.charAt(1) // 'n'
+person.replace('ré', 'rei') // 'Andrei'
+person // 'André'
+
+var height = 1.8
+
+height.toString() // '1.8'
+height.toFixed() // '2'
+
+function returnNothing() {
+    return 'nothing'
 }
 
-console.log(person.name);
-
-var square = {
-    sides: 4,
-    area(side) {
-        return side * side
-    },
-    perimeter(side) {
-        return this.sides * side
-    }
-}
-
-console.log(square.sides);
-console.log(square.area(5));
-console.log(square.perimeter(5));
-
-var menu = {
-    width: 800,
-    height: 50,
-    backgroundColor: '#84E',
-}
-
-var bg = menu.backgroundColor; // '#84E'
-menu.backgroundColor = '#000';
-console.log(menu.backgroundColor); // '#000'
-menu.position = 'fixed';
+returnNothing.toString();
+//"function returnNothing(lado) {
+//  return 'nothing'
+//}"
 
 
-// exercícios
-// Crie um objeto com os seus dados pessoais
-// Deve possui pelo menos duas propriedades nome e sobrenome
-var personalData = {
-    name: 'fulano',
-    lastName: 'silva',
-    age: 30,
-    ssn: 123456789,
-    birthDate: '01-01-2000',
-}
+var btn = document.querySelector('.btn');
 
-// Crie um método no objeto anterior, que mostre o seu nome completo
-personalData.fullName = function () {
-    return `${this.name} ${this.lastName}`
-}
+btn.classList.add('azul') // adiciona a classe azul
+btn.innerText; // 'Clique'
+btn.addEventListener('click',() => {
+    return console.log('clicked');
+} )
 
-console.log(personalData.fullName());
+// nomeie 3 propriedades ou métodos de strings
+//slice
+//length
+//replace
 
-// Modifique o valor da propriedade preco para 3000
-var carro = {
-    preco: 1000,
-    portas: 4,
-    marca: 'Audi',
-}
+// nomeie 5 propriedades ou métodos de elementos do DOM
+//addEventListener
+//appendChild
+//id
+//innerHtml
+//outerHtml
 
-carro.preco = 3000
-
-// Crie um objeto de um cachorro que represente um labrador,
-// preto com 10 anos, que late ao ver um homem
-var dog = {
-    breed: 'labrador',
-    color: '#000',
-    age: 10,
-    sawAMen: false,
-    bark(person) {
-        if (person === 'men') {
-            return 'au au'
-        } else {
-            return 'silence'
-        }
-    }
-}
-
-console.log(dog.bark('men'));
+// busque na web um objeto (método) capaz de interagir com o clipboard, 
+// clipboard é a parte do seu computador que lida com o CTRL + C e CTRL + V
